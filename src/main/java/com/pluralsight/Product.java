@@ -1,9 +1,9 @@
 package com.pluralsight;
 
 public class Product {
-    private int id;
-    private String name;
-    private double price;
+    public int id;
+    public String name;
+    public double price;
 
     public Product(int id, String name, double price) {
         this.id = id;
@@ -25,7 +25,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return String.format("#%-10d %-18s %10.2f", id,name,price);
-    } // i dont think im even utilising this
+        return String.format("#%-10d | %-18s | %10.2f", id,name,price);
+    }
 
 }
